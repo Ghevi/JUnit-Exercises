@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e5418cd-977b-4772-a372-602d51bd2d35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/io/ghevi/MathUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/ghevi/MathUtilsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/io/ghevi/MathUtilsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/ghevi/MathUtilsTest.class" afterDir="false" />
@@ -57,7 +56,7 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MathUtilsTest">
+  <component name="RunManager" selected="JUnit.MathUtilsTest.testDivide">
     <configuration name="MathUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-5-basics" />
       <extension name="coverage">
@@ -69,22 +68,6 @@
       <option name="PACKAGE_NAME" value="io.ghevi" />
       <option name="MAIN_CLASS_NAME" value="io.ghevi.MathUtilsTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MathUtilsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit-5-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.ghevi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.ghevi" />
-      <option name="MAIN_CLASS_NAME" value="io.ghevi.MathUtilsTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,6 +104,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MathUtilsTest.testDisabled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-5-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.ghevi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.ghevi" />
+      <option name="MAIN_CLASS_NAME" value="io.ghevi.MathUtilsTest" />
+      <option name="METHOD_NAME" value="testDisabled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MathUtilsTest.testDivide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-5-basics" />
       <extension name="coverage">
@@ -139,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MathUtilsTest" />
         <item itemvalue="JUnit.MathUtilsTest.testDivide" />
-        <item itemvalue="JUnit.MathUtilsTest.testComputeCircleRadius" />
+        <item itemvalue="JUnit.MathUtilsTest" />
+        <item itemvalue="JUnit.MathUtilsTest.testDisabled" />
         <item itemvalue="JUnit.MathUtilsTest.testAdd" />
-        <item itemvalue="JUnit.MathUtilsTest.test" />
+        <item itemvalue="JUnit.MathUtilsTest.testComputeCircleRadius" />
       </list>
     </recent_temporary>
   </component>
@@ -169,22 +168,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584652880271" />
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1584658332747">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1584660969587">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584658332747" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1584658332747">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584660969587" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1584660969586">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584658332747" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1584658332747">
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584660969586" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1584660969586">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584658332747" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1584658332747">
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584660969586" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1584660969586">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584658332747" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584660969586" />
     <state x="1157" y="270" key="SettingsEditor" timestamp="1584656777254">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
