@@ -16,6 +16,7 @@ import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 
 // @TestInstance(TestInstance.Lifecycle.PER_CLASS)  <!-- This will create just one instances of the class for all the tests, before all methods -->
+@DisplayName("When running MathUtils")
 class MathUtilsTest {
 
     MathUtils mathUtils;
@@ -43,7 +44,7 @@ class MathUtilsTest {
     }
 
     @Test
-    @DisplayName("Testing add method") // Change the label of the test
+    @DisplayName("Test add method") // Change the label of the test
     void testAdd() {
         int expected = 2;
         int actual = mathUtils.add(1, 1);
@@ -58,6 +59,38 @@ class MathUtilsTest {
 
     }
 
+    @Nested
+    @DisplayName("Nested tests for add method")
+    class AddTest {
+
+        @Test
+        @DisplayName("when adding two positive numbers")
+        void testAddPositive(){
+            assertEquals(2, mathUtils.add(1, 1), "should return the right sum");
+        }
+
+        @Test
+        @DisplayName("when adding two negative numbers")
+        void testAddNegative(){
+            int expected = -2;
+            int actual = mathUtils.add(-1, -1);
+            assertEquals(expected, actual, () -> "should return the right sum " + expected + " but returned " + actual);
+            // this lambda make possible that the String message get created only if the test fails, in large codebases it can help performances
+        }
+    }
+
+    @Test
+    @DisplayName("Test multiply method")
+    void testMultiply(){
+        // assertEquals(4, mathUtils.multiply(2, 2), "Should return the right product");
+        assertAll(
+                () -> assertEquals(4, mathUtils.multiply(2, 2)),
+                () -> assertEquals(0, mathUtils.multiply(2, 0)),
+                () -> assertEquals(-2, mathUtils.multiply(2, -1))
+        );
+    }
+
+
     @Test
     @EnabledOnOs(OS.WINDOWS)
     @DisplayName("Test divide method")
@@ -69,9 +102,10 @@ class MathUtilsTest {
 
     }
 
-    @Test
+    @RepeatedTest(3)
     @DisplayName("Test computeCircleArea")
-    void testComputeCircleRadius() {
+    void testComputeCircleRadius(RepetitionInfo repetitionInfo) {
+        repetitionInfo.getCurrentRepetition(); // based on what repetition u can use this get to get the actual repetition
         assertEquals(314.1592653589793, mathUtils.computeCircleArea(10), "Should return right circle area");
     }
 

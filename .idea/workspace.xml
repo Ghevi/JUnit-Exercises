@@ -56,7 +56,23 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MathUtilsTest.testDivide">
+  <component name="RunManager" selected="JUnit.MathUtilsTest.testComputeCircleRadius (1)">
+    <configuration name="MathUtilsTest$AddTest.testAddNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-5-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.ghevi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.ghevi" />
+      <option name="MAIN_CLASS_NAME" value="io.ghevi.MathUtilsTest$AddTest" />
+      <option name="METHOD_NAME" value="testAddNegative" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MathUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-5-basics" />
       <extension name="coverage">
@@ -88,6 +104,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MathUtilsTest.testComputeCircleRadius (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-5-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.ghevi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.ghevi" />
+      <option name="MAIN_CLASS_NAME" value="io.ghevi.MathUtilsTest" />
+      <option name="METHOD_NAME" value="testComputeCircleRadius(org.junit.jupiter.api.RepetitionInfo)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MathUtilsTest.testComputeCircleRadius" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-5-basics" />
       <extension name="coverage">
@@ -104,45 +136,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathUtilsTest.testDisabled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit-5-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.ghevi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.ghevi" />
-      <option name="MAIN_CLASS_NAME" value="io.ghevi.MathUtilsTest" />
-      <option name="METHOD_NAME" value="testDisabled" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MathUtilsTest.testDivide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit-5-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.ghevi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.ghevi" />
-      <option name="MAIN_CLASS_NAME" value="io.ghevi.MathUtilsTest" />
-      <option name="METHOD_NAME" value="testDivide" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MathUtilsTest.testDivide" />
-        <item itemvalue="JUnit.MathUtilsTest" />
-        <item itemvalue="JUnit.MathUtilsTest.testDisabled" />
-        <item itemvalue="JUnit.MathUtilsTest.testAdd" />
+        <item itemvalue="JUnit.MathUtilsTest.testComputeCircleRadius (1)" />
         <item itemvalue="JUnit.MathUtilsTest.testComputeCircleRadius" />
+        <item itemvalue="JUnit.MathUtilsTest$AddTest.testAddNegative" />
+        <item itemvalue="JUnit.MathUtilsTest" />
+        <item itemvalue="JUnit.MathUtilsTest.testAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -168,30 +168,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584652880271" />
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1584660969587">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1584727554159">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584660969587" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1584660969586">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584727554159" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1584727554159">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584660969586" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1584660969586">
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584727554159" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1584727554159">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584660969586" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1584660969586">
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584727554159" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1584727554159">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584660969586" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584727554159" />
     <state x="1157" y="270" key="SettingsEditor" timestamp="1584656777254">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1157" y="270" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584656777254" />
-    <state x="976" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1584650865532">
+    <state x="976" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1584725400704">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="976" y="524" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584650865532" />
+    <state x="976" y="524" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1584725400704" />
     <state x="1051" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1584576486454">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
