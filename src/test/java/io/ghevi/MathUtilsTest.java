@@ -45,6 +45,7 @@ class MathUtilsTest {
 
     @Test
     @DisplayName("Test add method") // Change the label of the test
+    @Tag("Math") // Tests with this tag run only in My MathTest configuration^
     void testAdd() {
         int expected = 2;
         int actual = mathUtils.add(1, 1);
@@ -61,6 +62,7 @@ class MathUtilsTest {
 
     @Nested
     @DisplayName("Nested tests for add method")
+    @Tag("Math") // Tests with this tag run only in My MathTest configuration^
     class AddTest {
 
         @Test
@@ -81,6 +83,7 @@ class MathUtilsTest {
 
     @Test
     @DisplayName("Test multiply method")
+    @Tag("Math") // Tests with this tag run only in My MathTest configuration^
     void testMultiply(){
         // assertEquals(4, mathUtils.multiply(2, 2), "Should return the right product");
         assertAll(
@@ -94,6 +97,7 @@ class MathUtilsTest {
     @Test
     @EnabledOnOs(OS.WINDOWS)
     @DisplayName("Test divide method")
+    @Tag("Math") // Tests with this tag run only in My MathTest configuration^
     void testDivide() {
         boolean isServerUp = true;
 
@@ -104,6 +108,7 @@ class MathUtilsTest {
 
     @RepeatedTest(3)
     @DisplayName("Test computeCircleArea")
+    @Tag("Circle") // Tests with this tag run only in My CircleTest configuration^
     void testComputeCircleRadius(RepetitionInfo repetitionInfo) {
         repetitionInfo.getCurrentRepetition(); // based on what repetition u can use this get to get the actual repetition
         assertEquals(314.1592653589793, mathUtils.computeCircleArea(10), "Should return right circle area");
