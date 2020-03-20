@@ -13,13 +13,15 @@ import static org.junit.jupiter.api.Assumptions.assumeTrue;
 // DO NOT declare instance variables to use in the methods, except ofc for the class instance,
 // because isn't tied of the methods order (which junit execute randomly)
 // @Before* annotations creates "hooks" (see tests life cycle)
-
+// RepetitionInfo, TestInfo and TestReporter are dependency injected
 
 // @TestInstance(TestInstance.Lifecycle.PER_CLASS)  <!-- This will create just one instances of the class for all the tests, before all methods -->
 @DisplayName("When running MathUtils")
 class MathUtilsTest {
 
     MathUtils mathUtils;
+    TestInfo testInfo;
+    TestReporter testReporter;
 
     /*
     @BeforeAll // It runs as the first method
@@ -39,8 +41,11 @@ class MathUtilsTest {
     */
 
     @BeforeEach // It will run before each test
-    void init(){
+    void init(TestInfo testInfo, TestReporter testReporter){
+        this.testInfo = testInfo;
+        this.testReporter = testReporter;
         mathUtils = new MathUtils();
+        // testReporter.publishEntry("Running " + testInfo.getDisplayName() + " with tags " + testInfo.getTags());
     }
 
     @Test
@@ -86,6 +91,10 @@ class MathUtilsTest {
     @Tag("Math") // Tests with this tag run only in My MathTest configuration^
     void testMultiply(){
         // assertEquals(4, mathUtils.multiply(2, 2), "Should return the right product");
+
+        // This line below does the same as.. but for every type of console ..System.out.println("Running " + testInfo.getDisplayName() + " with tags " + testInfo.getTags());
+        // With also timestamp
+        testReporter.publishEntry("Running " + testInfo.getDisplayName() + " with tags " + testInfo.getTags());
         assertAll(
                 () -> assertEquals(4, mathUtils.multiply(2, 2)),
                 () -> assertEquals(0, mathUtils.multiply(2, 0)),
@@ -109,7 +118,7 @@ class MathUtilsTest {
     @RepeatedTest(3)
     @DisplayName("Test computeCircleArea")
     @Tag("Circle") // Tests with this tag run only in My CircleTest configuration^
-    void testComputeCircleRadius(RepetitionInfo repetitionInfo) {
+    void testComputeCircleRadius(RepetitionInfo repetitionInfo) { // This is Dependency Injection
         repetitionInfo.getCurrentRepetition(); // based on what repetition u can use this get to get the actual repetition
         assertEquals(314.1592653589793, mathUtils.computeCircleArea(10), "Should return right circle area");
     }
